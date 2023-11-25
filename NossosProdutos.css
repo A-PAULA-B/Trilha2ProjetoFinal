@@ -1,0 +1,186 @@
+html,
+body,
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(84, 15, 139);
+    text-align: center;
+    color: rgb(230, 217, 233);
+    font-weight: bold;
+    font-size: 60px;
+}
+
+#carrossel,
+ul {
+    height: 600px;
+}
+
+#carrossel {
+
+    position: relative;
+    width: 600px;
+    height: 500px;
+    margin: 370px;
+    overflow: hidden;
+    margin-top: 10px;
+    box-shadow: 5px 5px 10px 15px rgb(14, 13, 14);
+}
+
+#carrossel li {
+    float: left;
+    height: 300px;
+    position: relative;
+    width: 600px;
+}
+
+#carrossel ul {
+    position: relative;
+    left: 10px;
+    top: -50px;
+    width: 9000px;
+    list-style: none;
+    margin-left: -50px;
+    transition: left 0.3s linear;
+}
+
+.carrossel-container {
+
+    width: 100%;
+}
+
+.carrossel-container img {
+    background-size: 100%;
+    width: 100%;
+    padding: 0 10px;
+}
+
+#carrossel ul {
+    animation: slide 20s infinite;
+}
+
+@keyframes slide {
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -600px;
+    }
+
+    45% {
+        left: -600px;
+    }
+
+    50% {
+        left: -1200px;
+    }
+
+    70% {
+        left: -1200px;
+    }
+
+    75% {
+        left: -1800px;
+    }
+
+    98% {
+        left: -1800px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+a.linkum:link {
+    font-size: 30px;
+    color: #e9e3e3;
+    text-decoration: none;
+}
+
+a.linkum:visited {
+    color: #f7eeee;
+    text-decoration: none;
+}
+
+a.linkum:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.cabeçalho {
+    border-width: 15px;
+    border-style: double;
+    border-color: rgb(14, 15, 17);
+    background-color: rgb(84, 15, 139);
+    padding: 5px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+.Topo {
+    border-width: 15px;
+    border-style: double;
+    border-color: rgb(14, 15, 17);
+    background-color: rgb(84, 15, 139);
+    text-align: center;
+    animation: moveToRight 5s ease-in-out;
+    animation-delay: 5ms;
+}
+
+@keyframes moveToRight {
+    0% {
+        transform: rotate(100deg);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    font-size: 15px;
+    background-color: rgb(84, 15, 139);
+    color: white;
+    border-width: 15px;
+    border-style: double;
+    border-color: rgb(14, 15, 17);
+}
+
+.blink {
+    background-image: url(maxresdefaultrec.jpg);
+    animation: blink 10s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 2;
+    }
+
+    100% {
+        opacity: 10;
+        color: rgb(22, 2, 26);
+        font-size: 50px;
+        font-weight: 700;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 70px;
+        background-position: center top;
+    }
+}
+
+input,
+textarea {
+    width: 80%;
+    padding: 30px;
+    border: 2;
+    font-size: 1em;
+    background-color: #2d2d2d;
+    color: #faf8f8;
+    border-radius: 50px;
+}
